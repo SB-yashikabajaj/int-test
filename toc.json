@@ -1,0 +1,872 @@
+{
+  "collapseTableOfContents": true,
+  "items": [
+    {
+      "type": "divider",
+      "title": "APIS"
+    },
+    {
+      "type": "group",
+      "title": "Authentication API",
+      "uri": "/Validis-Authentication.yaml",
+      "items": [
+        {
+          "type": "group",
+          "title": "Authentication",
+          "items": [
+            {
+              "type": "item",
+              "title": "Get access token and clientId",
+              "uri": "/Validis-Authentication.yaml/paths/~1v1~1oauth~1token/post"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Schemas",
+          "items": [
+            {
+              "type": "item",
+              "title": "Access token",
+              "uri": "/Validis-Authentication.yaml/components/schemas/Token"
+            }
+          ],
+          "itemsType": "model"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Companies API",
+      "uri": "/Validis-Companies.yaml",
+      "items": [
+        {
+          "type": "group",
+          "title": "Company Details",
+          "items": [
+            {
+              "type": "item",
+              "title": "Get company details",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1engagements~1{engagementId}~1companyDetails/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Engagements",
+          "items": [
+            {
+              "type": "item",
+              "title": "Create engagement",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements/post"
+            },
+            {
+              "type": "item",
+              "title": "List all engagements",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements/get"
+            },
+            {
+              "type": "item",
+              "title": "[BETA] Create multiple engagements",
+              "uri": "/Validis-Companies.yaml/paths/~1v2~1clients~1{clientId}~1engagements~1bulk/post"
+            },
+            {
+              "type": "item",
+              "title": "[BETA] Delete multiple engagements",
+              "uri": "/Validis-Companies.yaml/paths/~1v2~1clients~1{clientId}~1engagements~1bulk/delete"
+            },
+            {
+              "type": "item",
+              "title": "Retrieve engagement details",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1engagements~1{engagementId}/get"
+            },
+            {
+              "type": "item",
+              "title": "Update engagement",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}/put"
+            },
+            {
+              "type": "item",
+              "title": "Delete engagement",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}/delete"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Manage Financial Years",
+          "items": [
+            {
+              "type": "item",
+              "title": "Retrieve connector financial years",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1extraction~1years/get"
+            },
+            {
+              "type": "item",
+              "title": "Setup connector financial years",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1extraction~1years/put"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Upload Schedule",
+          "items": [
+            {
+              "type": "item",
+              "title": "Set schedule",
+              "uri": "/Validis-Companies.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1schedule/put"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Schemas",
+          "items": [
+            {
+              "type": "item",
+              "title": "Multiple engagement request",
+              "uri": "/Validis-Companies.yaml/components/schemas/Create-Bulk-Engagement-Request"
+            },
+            {
+              "type": "item",
+              "title": "Engagement request",
+              "uri": "/Validis-Companies.yaml/components/schemas/Create-Engagement-Request"
+            },
+            {
+              "type": "item",
+              "title": "Bulk-Engagement-Result",
+              "uri": "/Validis-Companies.yaml/components/schemas/Bulk-Engagement-Result"
+            },
+            {
+              "type": "item",
+              "title": "Multiple engagement errors",
+              "uri": "/Validis-Companies.yaml/components/schemas/Bulk-Engagement-Errors"
+            },
+            {
+              "type": "item",
+              "title": "Multiple engagement response",
+              "uri": "/Validis-Companies.yaml/components/schemas/Create-Bulk-Engagement-Response"
+            },
+            {
+              "type": "item",
+              "title": "Delete engagements response",
+              "uri": "/Validis-Companies.yaml/components/schemas/Delete-Bulk-Engagement-Response"
+            },
+            {
+              "type": "item",
+              "title": "Engagement response",
+              "uri": "/Validis-Companies.yaml/components/schemas/Create-Engagement-Response"
+            },
+            {
+              "type": "item",
+              "title": "Client's engagements",
+              "uri": "/Validis-Companies.yaml/components/schemas/Get-Engagements-Response"
+            },
+            {
+              "type": "item",
+              "title": "Engagement response",
+              "uri": "/Validis-Companies.yaml/components/schemas/Get-Engagement-Response"
+            },
+            {
+              "type": "item",
+              "title": "Engagement update request",
+              "uri": "/Validis-Companies.yaml/components/schemas/Update-Engagement-Request"
+            },
+            {
+              "type": "item",
+              "title": "Engagement update response",
+              "uri": "/Validis-Companies.yaml/components/schemas/Update-Engagement-Response"
+            },
+            {
+              "type": "item",
+              "title": "Update data refresh schedule request",
+              "uri": "/Validis-Companies.yaml/components/schemas/Update-Schedule-Request"
+            },
+            {
+              "type": "item",
+              "title": "Company details",
+              "uri": "/Validis-Companies.yaml/components/schemas/Get-Company-Details-Response"
+            },
+            {
+              "type": "item",
+              "title": "Years to extract request",
+              "uri": "/Validis-Companies.yaml/components/schemas/Put-Years-To-Extract-Request"
+            },
+            {
+              "type": "item",
+              "title": "Years to extract response",
+              "uri": "/Validis-Companies.yaml/components/schemas/Years-To-Extract-Response"
+            }
+          ],
+          "itemsType": "model"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Connections API",
+      "uri": "/Validis-Connections.yaml",
+      "items": [
+        {
+          "type": "group",
+          "title": "Connectors",
+          "items": [
+            {
+              "type": "item",
+              "title": "Get connectors",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1clients~1{clientId}~1connectors/get"
+            },
+            {
+              "type": "item",
+              "title": "[BETA] Get extract guidance content",
+              "uri": "/Validis-Connections.yaml/paths/~1v2~1extract-guidance~1{connectorName}~1{scope}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Uploads",
+          "items": [
+            {
+              "type": "item",
+              "title": "Perform an upload",
+              "uri": "/Validis-Connections.yaml/paths/~1v2~1engagements~1{engagementId}~1connectors~1{connectorName}~1upload/post"
+            },
+            {
+              "type": "item",
+              "title": "[BETA] Perform a smart upload",
+              "uri": "/Validis-Connections.yaml/paths/~1v2~1engagements~1{engagementId}~1smart-uploads/post"
+            },
+            {
+              "type": "item",
+              "title": "[BETA] Get smart upload details",
+              "uri": "/Validis-Connections.yaml/paths/~1v2~1engagements~1{engagementId}~1smart-uploads~1{uploadId}/get"
+            },
+            {
+              "type": "item",
+              "title": "[BETA] Get smart upload original files",
+              "uri": "/Validis-Connections.yaml/paths/~1v2~1engagements~1{engagementId}~1smart-uploads~1{uploadId}~1files/get"
+            },
+            {
+              "type": "item",
+              "title": "Sync connection",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1engagements~1{engagementId}~1connectors~1{connectorName}~1refresh/post"
+            },
+            {
+              "type": "item",
+              "title": "Delete upload",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1uploads/delete"
+            },
+            {
+              "type": "item",
+              "title": "Audit uploads",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1workflows~1engagements~1{engagementId}~1uploads~1{uploadId}/get"
+            },
+            {
+              "type": "item",
+              "title": "List all client uploads",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1clients~1{clientId}~1uploads/get"
+            },
+            {
+              "type": "item",
+              "title": "Get upload details",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1uploads~1{uploadId}/get"
+            },
+            {
+              "type": "item",
+              "title": "List latest uploads",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1clients~1{clientId}~1lastUploads/get"
+            },
+            {
+              "type": "item",
+              "title": "Get MYOB companies",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1companies/get"
+            },
+            {
+              "type": "item",
+              "title": "Create MYOB companies",
+              "uri": "/Validis-Connections.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1companies/post"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Schemas",
+          "items": [
+            {
+              "type": "item",
+              "title": "Client's connector",
+              "uri": "/Validis-Connections.yaml/components/schemas/Get-Connector-Response"
+            },
+            {
+              "type": "item",
+              "title": "Smart upload response",
+              "uri": "/Validis-Connections.yaml/components/schemas/Smart-Upload-Response"
+            },
+            {
+              "type": "item",
+              "title": "Upload response",
+              "uri": "/Validis-Connections.yaml/components/schemas/Data-Share-Client"
+            },
+            {
+              "type": "item",
+              "title": "Client's uploads",
+              "uri": "/Validis-Connections.yaml/components/schemas/Get-Client-Uploads-Response"
+            },
+            {
+              "type": "item",
+              "title": "Client's upload details",
+              "uri": "/Validis-Connections.yaml/components/schemas/Get-Upload-Response"
+            },
+            {
+              "type": "item",
+              "title": "Client's latest upload",
+              "uri": "/Validis-Connections.yaml/components/schemas/Get-Client-Last-Upload-Response"
+            },
+            {
+              "type": "item",
+              "title": "Get MYOB company response",
+              "uri": "/Validis-Connections.yaml/components/schemas/Get-Myob-Company-Response"
+            },
+            {
+              "type": "item",
+              "title": "Create MYOB company response",
+              "uri": "/Validis-Connections.yaml/components/schemas/Create-Myob-Company-Response"
+            },
+            {
+              "type": "item",
+              "title": "Workflow steps",
+              "uri": "/Validis-Connections.yaml/components/schemas/Get-Workflow-Upload-Response"
+            },
+            {
+              "type": "item",
+              "title": "Extract-Guidance-Content-Response",
+              "uri": "/Validis-Connections.yaml/components/schemas/Extract-Guidance-Content-Response"
+            }
+          ],
+          "itemsType": "model"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Accounting API",
+      "uri": "/Validis-Accounting.yaml",
+      "items": [
+        {
+          "type": "group",
+          "title": "Account Summaries",
+          "items": [
+            {
+              "type": "item",
+              "title": "Get account summaries",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1accountSummaries/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Accounts",
+          "items": [
+            {
+              "type": "item",
+              "title": "List accounts",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1accounts/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Balance Sheet",
+          "items": [
+            {
+              "type": "item",
+              "title": "Balance sheet summarised",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1balance-sheet-standard~1engagements~1{engagementId}/get"
+            },
+            {
+              "type": "item",
+              "title": "Balance sheet detailed",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1balance-sheet-detailed~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Cashflow Statement",
+          "items": [
+            {
+              "type": "item",
+              "title": "Cashflow statement",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1cashflow-statement~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Engagement Customers",
+          "items": [
+            {
+              "type": "item",
+              "title": "Customer information",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1customers/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Financial Periods",
+          "items": [
+            {
+              "type": "item",
+              "title": "Get financial periods",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1periods/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Financial Ratios",
+          "items": [
+            {
+              "type": "item",
+              "title": "Retrieve financial ratios",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1metrics~1{metricType}~1{rangeType}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Financial Snapshot",
+          "items": [
+            {
+              "type": "item",
+              "title": "Financial snapshot",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1financial-snapshot~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Income Statement",
+          "items": [
+            {
+              "type": "item",
+              "title": "Income statement detailed",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1profit-and-loss-detailed~1engagements~1{engagementId}/get"
+            },
+            {
+              "type": "item",
+              "title": "Income statement summarised",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1income-statement-standard~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Journals",
+          "items": [
+            {
+              "type": "item",
+              "title": "List yardi journals",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1journals/get"
+            },
+            {
+              "type": "item",
+              "title": "Get yardi journal",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1journals~1{id}/get"
+            },
+            {
+              "type": "item",
+              "title": "List all journals",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1journals/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Payables",
+          "items": [
+            {
+              "type": "item",
+              "title": "Payable items",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1payableItems/get"
+            },
+            {
+              "type": "item",
+              "title": "Aged payables",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1aged-creditor~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Quality Score",
+          "items": [
+            {
+              "type": "item",
+              "title": "Quality score",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1quality-score~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Receivables",
+          "items": [
+            {
+              "type": "item",
+              "title": "Receivable items",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1receivableItems/get"
+            },
+            {
+              "type": "item",
+              "title": "Aged receivables",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1aged-debtor~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Reports",
+          "items": [
+            {
+              "type": "item",
+              "title": "Working papers",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1{clientId}~1{smeId}~1working-papers~1generate/post"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Suppliers",
+          "items": [
+            {
+              "type": "item",
+              "title": "List suppliers",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1engagements~1{engagementId}~1suppliers/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Trial Balance",
+          "items": [
+            {
+              "type": "item",
+              "title": "Trial balance",
+              "uri": "/Validis-Accounting.yaml/paths/~1v1~1reports~1trial-balance~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Schemas",
+          "items": [
+            {
+              "type": "item",
+              "title": "Financial period",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Financial-Year-Response"
+            },
+            {
+              "type": "item",
+              "title": "Receivable items",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Receivable-Items-Response"
+            },
+            {
+              "type": "item",
+              "title": "Payable items",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Payable-Items-Response"
+            },
+            {
+              "type": "item",
+              "title": "Account summary",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Account-Summary-Response"
+            },
+            {
+              "type": "item",
+              "title": "Account",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Account-Response"
+            },
+            {
+              "type": "item",
+              "title": "Suppliers",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Suppliers-Response"
+            },
+            {
+              "type": "item",
+              "title": "Customers",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Customers-Response"
+            },
+            {
+              "type": "item",
+              "title": "Journals",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Journals-Response"
+            },
+            {
+              "type": "item",
+              "title": "Metrics",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Financial-Ratios"
+            },
+            {
+              "type": "item",
+              "title": "Yardi Journal",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Yardi-Journal-Response"
+            },
+            {
+              "type": "item",
+              "title": "Tree report",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Reports-Tree-Response"
+            },
+            {
+              "type": "item",
+              "title": "Table report",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Reports-Table-Response"
+            },
+            {
+              "type": "item",
+              "title": "API tree report",
+              "uri": "/Validis-Accounting.yaml/components/schemas/Get-Reports-ApiTree-Response"
+            },
+            {
+              "type": "item",
+              "title": "Reports: View",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-View"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Range",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Range"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Element",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Element"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Page",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Page"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Title",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Title"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Tree value",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Value"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Required content",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Required-Content"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Financial period",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Financial-Period"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Table value",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Table-Value"
+            },
+            {
+              "type": "item",
+              "title": "Reports: Table row",
+              "uri": "/Validis-Accounting.yaml/components/schemas/_Get-Reports-Response-Row"
+            }
+          ],
+          "itemsType": "model"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Reports API",
+      "uri": "/Validis-Reports.yaml",
+      "items": [
+        {
+          "type": "group",
+          "title": "Accounts",
+          "items": [
+            {
+              "type": "item",
+              "title": "Generate accounts payable",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1accounts-payable~1engagements~1{engagementId}/get"
+            },
+            {
+              "type": "item",
+              "title": "Generate accounts receivable",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1accounts-receivable~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Additional Data",
+          "items": [
+            {
+              "type": "item",
+              "title": "Generate additional data",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1additional~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Bank Statements",
+          "items": [
+            {
+              "type": "item",
+              "title": "Bank statements",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1bank-statement~1engagements~1{engagementId}/get"
+            },
+            {
+              "type": "item",
+              "title": "Bank statements data",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1bank-statement~1engagements~1{engagementId}~1data/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Bank Transactions",
+          "items": [
+            {
+              "type": "item",
+              "title": "Bank transactions",
+              "uri": "/Validis-Reports.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1bank-transactions/post"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Compliance",
+          "items": [
+            {
+              "type": "item",
+              "title": "Report compliance",
+              "uri": "/Validis-Reports.yaml/paths/~1v1~1clients~1{clientId}~1engagements~1{engagementId}~1report~1compliance/get"
+            },
+            {
+              "type": "item",
+              "title": "Client compliance reports",
+              "uri": "/Validis-Reports.yaml/paths/~1v1~1clients~1{clientId}~1report~1compliance/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Ledger",
+          "items": [
+            {
+              "type": "item",
+              "title": "Generate general ledger",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1general-ledger~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Passthrough Data",
+          "items": [
+            {
+              "type": "item",
+              "title": "Generate passthrough",
+              "uri": "/Validis-Reports.yaml/paths/~1v2~1extracts~1passthrough~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Schemas",
+          "items": [
+            {
+              "type": "item",
+              "title": "Ledger",
+              "uri": "/Validis-Reports.yaml/components/schemas/Extract"
+            },
+            {
+              "type": "item",
+              "title": "Compliance report",
+              "uri": "/Validis-Reports.yaml/components/schemas/Get-Compliance-Report-Response"
+            },
+            {
+              "type": "item",
+              "title": "File download",
+              "uri": "/Validis-Reports.yaml/components/schemas/ValidisFile"
+            }
+          ],
+          "itemsType": "model"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "title": "Platform API",
+      "uri": "/Validis-Platform.yaml",
+      "items": [
+        {
+          "type": "group",
+          "title": "Invite User",
+          "items": [
+            {
+              "type": "item",
+              "title": "Send user invitation",
+              "uri": "/Validis-Platform.yaml/paths/~1v1~1invitations/post"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Resend Data Upload Request",
+          "items": [
+            {
+              "type": "item",
+              "title": "Send upload reminder",
+              "uri": "/Validis-Platform.yaml/paths/~1v1~1invitations~1clients~1{clientId}~1engagements~1{engagementId}/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Users",
+          "items": [
+            {
+              "type": "item",
+              "title": "List all users",
+              "uri": "/Validis-Platform.yaml/paths/~1v1~1clients~1{clientId}~1users/get"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "title": "Schemas",
+          "items": [
+            {
+              "type": "item",
+              "title": "Invitation",
+              "uri": "/Validis-Platform.yaml/components/schemas/Invitation-Request"
+            },
+            {
+              "type": "item",
+              "title": "Client's users",
+              "uri": "/Validis-Platform.yaml/components/schemas/Client-Users-Response"
+            }
+          ],
+          "itemsType": "model"
+        }
+      ]
+    },
+    {
+      "type": "item",
+      "title": "Release Notes",
+      "uri": "docs/Release-Notes.md"
+    }
+  ],
+  "version": 2
+}
